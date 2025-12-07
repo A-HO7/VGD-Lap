@@ -5,8 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_3DStealthGame/Tutorial_Demo/Demo_Scenes/MainMenu.unity
     guid: e0afa25d30aeb924895fa68e23be7af2
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: bbb2e57cf1247d94fab79fa739b7d24f
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/VoidCorridor.unity
+    guid: 1e9aaac4896c5a545948f8c34eb8215d
+  - enabled: 1
+    path: Assets/Scenes/The Core Lab.unity
+    guid: 867207ac2a5d4424e9db8cc0bc06beac
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: b44f3940c4940544a8c2c6aee5fa086f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 143848
+  packageName: '3D Stealth Game: Haunted House'
+  packageVersion: 3.1
+  assetPath: Assets/_3DStealthGame/Art/Models/Characters/Players/JohnLemon_Model.fbx
+  uploadId: 770342
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable:
@@ -329,7 +336,187 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: JohnLemon_Model(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: JohnLemon_Model(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Root
+      position: {x: 0.00032327874, y: 0.39290556, z: 0.023705129}
+      rotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Spine1
+      parentName: Hips
+      position: {x: -0.054252915, y: 1.20736755e-17, z: 8.881784e-18}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Spine2
+      parentName: Spine1
+      position: {x: -0.17495, y: 3.8857805e-17, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Neck
+      parentName: Spine2
+      position: {x: -0.24784395, y: 5.5094818e-17, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Head
+      parentName: Neck
+      position: {x: -0.047018725, y: 1.0408341e-17, z: 4.440892e-18}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: HeadEND
+      parentName: Head
+      position: {x: -0.43319148, y: 9.618783e-17, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: LeftEyebrow
+      parentName: Head
+      position: {x: -0.36744747, y: -0.12687586, z: 0.16618341}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: RightEyebrow
+      parentName: Head
+      position: {x: -0.36744884, y: 0.12687573, z: 0.16618387}
+      rotation: {x: -0, y: 1, z: -6.123234e-17, w: 0}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: Mouth
+      parentName: Head
+      position: {x: -0.15692036, y: 1.1215162e-12, z: 0.21675228}
+      rotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: LeftEyelidUp
+      parentName: Head
+      position: {x: -0.2479588, y: -0.123310275, z: 0.14039786}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: LeftEyelidDown
+      parentName: Head
+      position: {x: -0.2479588, y: -0.123310275, z: 0.14039786}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: RightEyelidDown
+      parentName: Head
+      position: {x: -0.24796002, y: 0.12331095, z: 0.14039662}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: RightEyelidUp
+      parentName: Head
+      position: {x: -0.24796002, y: 0.12331095, z: 0.14039664}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: LeftEye
+      parentName: Head
+      position: {x: -0.24035883, y: -0.123310275, z: 0.09902587}
+      rotation: {x: -0, y: 1, z: -5.684342e-12, w: 0}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: RightEye
+      parentName: Head
+      position: {x: -0.24035883, y: 0.123310715, z: 0.09902587}
+      rotation: {x: 0.000013689395, y: 0.000043964654, z: 0.051389396, w: 0.99867874}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: LeftShoulder
+      parentName: Spine2
+      position: {x: -0.15408985, y: -0.045143012, z: -0.003160109}
+      rotation: {x: 0.0000000025064646, y: -0.0000000040197934, z: 0.59877354, w: 0.80091834}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: LeftArm
+      parentName: LeftShoulder
+      position: {x: -0.09357534, y: 0.0039133863, z: -1.7763568e-17}
+      rotation: {x: -0.000000025364159, y: -0.0000000047742894, z: 0.18498811, w: 0.98274076}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1}
+    - name: LeftForeArm
+      parentName: LeftArm
+      position: {x: -0.24907593, y: 6.988088e-16, z: -1.3322652e-17}
+      rotation: {x: -0, y: -0, z: -1.2109584e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftHand
+      parentName: LeftForeArm
+      position: {x: -0.2347236, y: -5.9792813e-16, z: 4.440892e-18}
+      rotation: {x: 0.00000002580958, y: -1.7896795e-13, z: 1.2109584e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftHandEND
+      parentName: LeftHand
+      position: {x: -0.1068511, y: -3.6741073e-16, z: -4.440892e-18}
+      rotation: {x: -0, y: -0, z: 1.1107162e-25, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightShoulder
+      parentName: Spine2
+      position: {x: -0.15408951, y: 0.045143023, z: -0.0031601298}
+      rotation: {x: 0.60247993, y: 0.7981341, z: 0.0000000026853249, w: -0.0000000043927315}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000011}
+    - name: RightArm
+      parentName: RightShoulder
+      position: {x: 0.09169469, y: -0.004647737, z: 1.788555e-17}
+      rotation: {x: 0.000000051924804, y: 0.0000000118332215, z: 0.17909327, w: 0.9838321}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: RightForeArm
+      parentName: RightArm
+      position: {x: 0.25109458, y: -4.203877e-16, z: 2.6523412e-17}
+      rotation: {x: -0, y: -0, z: -5.1468215e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightHand
+      parentName: RightForeArm
+      position: {x: 0.234724, y: 0, z: 2.2204459e-17}
+      rotation: {x: -2.131628e-14, y: -4.707345e-14, z: 2.594038e-21, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightHandEND
+      parentName: RightHand
+      position: {x: 0.106851, y: 0, z: 1.3322676e-17}
+      rotation: {x: -0, y: -0, z: 6.310983e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftLeg
+      parentName: Hips
+      position: {x: 0.021578202, y: -0.06640858, z: 0.0061707473}
+      rotation: {x: -0.000000018250113, y: -0, z: 1, w: 0}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: LeftCalf
+      parentName: LeftLeg
+      position: {x: -0.16461787, y: -3.2269087e-17, z: -0.000000003574569}
+      rotation: {x: -0, y: -0.00000003668004, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: LeftFoot
+      parentName: LeftCalf
+      position: {x: -0.15603116, y: -5.2409446e-17, z: 0}
+      rotation: {x: -0, y: -2.4868992e-14, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: LeftFoorEND
+      parentName: LeftFoot
+      position: {x: -0.046951346, y: -1.0425293e-17, z: 0.104955554}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: RightLeg
+      parentName: Hips
+      position: {x: 0.021578005, y: 0.06640862, z: 0.0061707697}
+      rotation: {x: 1, y: -0, z: 0.000000025809555, w: 0}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: RightCalf
+      parentName: RightLeg
+      position: {x: 0.16461757, y: 3.5527136e-17, z: 0.000000007931517}
+      rotation: {x: -0, y: -0.000000049914107, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: RightFoot
+      parentName: RightCalf
+      position: {x: 0.1560317, y: 3.5527136e-17, z: 0}
+      rotation: {x: -0, y: -0.00000013115543, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: RightFoorEND
+      parentName: RightFoot
+      position: {x: 0.046951294, y: -8.881784e-18, z: -0.1049551}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: JohnLemon_Mesh
+      parentName: JohnLemon_Model(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -340,7 +527,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: Root
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
@@ -354,10 +541,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 143848
-  packageName: '3D Stealth Game: Haunted House'
-  packageVersion: 3.1
-  assetPath: Assets/_3DStealthGame/Art/Models/Characters/Players/JohnLemon_Model.fbx
-  uploadId: 770342

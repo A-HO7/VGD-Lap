@@ -212,11 +212,11 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: -203655887218126122, guid: 006ef2e6624024946b124e722ba677fb,
     type: 3}
-  m_Tag: 
+  m_Tag: Jump
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_TimeParameter: WalkSpeed
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0

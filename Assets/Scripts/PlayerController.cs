@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float groundRadius = 0.2f;
     public LayerMask groundLayer;
 
+    public float gravityMultiplier = 1.5f; // NEW
+
     private Rigidbody rb;
 
     void Start()
@@ -25,6 +27,12 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
         }
+    }
+
+    void FixedUpdate()
+    {
+        // EXTRA GRAVITY
+        rb.AddForce(Physics.gravity * (gravityMultiplier - 1f), ForceMode.Acceleration);
     }
 
     bool IsGrounded()

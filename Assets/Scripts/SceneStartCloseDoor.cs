@@ -4,7 +4,7 @@ public class SceneStartCloseDoor : MonoBehaviour
 {
     [Header("Settings")]
     [Tooltip("Time in seconds before the door starts closing")]
-    [SerializeField] private float closeDelay = 1.0f;
+    [SerializeField] private float closeDelay = 2.0f;
 
     private EasyDoor door;
 

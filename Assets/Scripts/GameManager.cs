@@ -9,13 +9,17 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     // We assume LevelOne is build index 1, LevelTwo is 2, etc.
     private int currentLevelIndex = 1;
-
+    // UI Manager variable will be set in the inspector (see section 2)
+    public UIManager uiManager;
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            // ADD THIS: Subscribe to the scene loaded event
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -31,17 +35,39 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(currentLevelIndex);
     }
 
+    // Call this before loading a new scene to unfreeze time
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f; // Unfreeze time
+
+        if (uiManager != null)
+        {
+            uiManager.ShowGameHUD(); // This must hide the PauseMenuPanel
+        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0f; // Freeze time!
+        // Show the pause menu panel (UI Manager handles this)
+        if (uiManager != null)
+        {
+            uiManager.ShowPauseMenu();
+        }
+    }
+
     public void LoadLevelByIndex(int buildIndex)
     {
-        // Check to prevent trying to load a non-existent scene
+        // IMPORTANT: Always resume time before loading a new scene
+        ResumeGame();
         if (buildIndex >= 1 && buildIndex < SceneManager.sceneCountInBuildSettings)
         {
-            currentLevelIndex = buildIndex; // Update saved progress
+            currentLevelIndex = buildIndex;
             SceneManager.LoadScene(buildIndex);
         }
         else
         {
-            Debug.LogError("Attempted to load level index " + buildIndex + ", which is outside the build settings range.");
+            Debug.LogError("Invalid level index.");
         }
     }
 
@@ -63,9 +89,29 @@ public class GameManager : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene(0); // Assuming Main Menu is always index 0
-    }
+        // IMPORTANT: Unfreeze time before exiting
+        if (Time.timeScale != 1f)
+        {
+            Time.timeScale = 1f;
+        }
 
+        // Optionally hide the pause menu panel explicitly before loading
+        if (uiManager != null)
+        {
+            uiManager.ShowGameHUD();
+        }
+
+        // Load Scene 0 (Main Menu)
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+    private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
+    {
+        // Safety check: Ensure time is always running when a game scene is loaded.
+        if (Time.timeScale != 1f && scene.buildIndex != 0)
+        {
+            Time.timeScale = 1f;
+        }
+    }
     public void ExitGame()
     {
         Application.Quit();
